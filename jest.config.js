@@ -2,6 +2,7 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>setup-jest.ts'],
+  resetMocks: true,
   moduleNameMapper: {
     '^.+\\.(css|less|scss|svg|png|jpg)$': 'babel-jest',
   },

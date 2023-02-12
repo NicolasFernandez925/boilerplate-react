@@ -19,6 +19,7 @@ module.exports = {
     },
   },
   extends: [
+    'standard',
     'standard-with-typescript',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
