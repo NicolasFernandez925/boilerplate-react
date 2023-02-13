@@ -18,12 +18,11 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "yarn run prettier",
       "yarn run lint",
       "git add ."
-    ],
-    "package.json": []
+    ]
   },
   "eslintConfig": {
     "extends": [
