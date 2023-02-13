@@ -68,6 +68,105 @@ Ejemplo al correr el comando descripto previamente:
 
 También crea en la estructura de carpetas, una carpeta con el nombre **coverage** y dentro de **Icov-report** un archivo **index.html** donde al clickearlo te lleva a un reporte mas global en el cual se detalla más ampliamente el código cubierto por cada test.
 
+## Estructura de carpetas
 
-
-
+```
+src
+|-- components
+|   |-- common
+|   |   |-- Buttons
+|   |   |   |-- Button.tsx
+|   |   |   |-- ...
+|   |   |   |-- style.css
+|   |   |   |-- index.ts
+|   |   |-- Inputs
+|   |   |   |-- Input.tsx
+|   |   |   |-- ...
+|   |   |   |-- style.css
+|   |   |   |-- index.ts
+|   |   |-- ...
+|   |-- shared
+|   |   |-- Header
+|   |   |   |-- Header.tsx
+|   |   |   |-- ...
+|   |   |   |-- style.css
+|   |   |   |-- index.ts
+|   |   |-- Footer
+|   |   |   |-- Footer.tsx
+|   |   |   |-- ...
+|   |   |   |-- style.css
+|   |   |   |-- index.ts
+|   |   |-- ...
+|   |   |-- index.ts
+|   |-- ...
+|   |-- index.ts
+|-- utils -> funciones reutilizables
+|   |-- Date.ts
+|   |-- Formatter.ts
+|   |-- ...
+|   |-- index.ts
+|-- config -> configuraciones globales
+|-- pages -> una carpeta por cada página
+|   |-- Home
+|   |   |-- components
+|   |   |   |-- HomeHeader
+|   |   |   |-- HomeHero
+|   |   |   |-- HomeFooter
+|   |   |   |-- ...
+|   |   |   |-- index.ts -> requerido el use de un archivo .index que contenga todos los componentes a exportar
+|   |   |-- tests
+|   |   |   |-- HomeHeader.test.tsx
+|   |   |   |-- HomeHero.test.tsx
+|   |   |   |-- HomeFooter.test.tsx
+|   |   |   |-- ...
+|   |   |   |-- index.ts
+|   |   |-- utils  -> utilidades sólo usadas dentro de Home
+|   |   |   |-- index.ts
+|   |   |   |-- ...
+|   |   |-- interfaces
+|   |   |   |-- HomeAbout.ts
+|   |   |   |-- ...
+|   |   |-- Home.tsx
+|   |   |-- index.ts
+|   |   |-- style.css
+|   |-- About
+|   |   |-- components
+|   |   |   |-- AboutHeader
+|   |   |   |-- AboutHero
+|   |   |   |-- AboutFooter
+|   |   |   |-- ...
+|   |   |   |-- index.ts
+|   |   |-- tests
+|   |   |   |-- AboutHeader.test.tsx
+|   |   |   |-- AboutHero.test.tsx
+|   |   |   |-- AboutFooter.test.tsx
+|   |   |   |-- ...
+|   |   |   |-- index.ts
+|   |   |-- utils
+|   |   |   |-- index.ts
+|   |   |   |-- ...
+|   |   |-- interfaces
+|   |   |   |-- PropAbout.ts
+|   |   |   |-- ...
+|   |   |-- About.tsx
+|   |   |-- index.ts
+|   |   |-- style.css
+|   |-- ...
+|-- services -> se agrupan en base a dominio
+|   |-- Auth
+|   |   |-- auth.ts
+|   |   |-- index.ts
+|   |   |-- ...
+|   |-- Post
+|   |   |-- post.ts
+|   |   |-- index.ts
+|   |   |-- ...
+|   |-- ...
+|-- interfaces
+|   |-- User.ts
+|   |-- Post.ts
+|   |-- ...
+|   |-- index.ts
+|-- index.tsx
+|-- App.tsx
+```
