@@ -61,3 +61,13 @@ yarn run test:w
 ```
 
 Esto ejecutará todos los archivos con extensión .spec o .test dentro de la carpeta src y generará una carpeta `coverage`  en el root de la aplicación mostrando en detalle el porcentaje de líneas/ramas cubiertas por las pruebas.
+
+Ejemplo al correr el comando descripto previamente:
+
+<img width="418" alt="Captura de pantalla 2023-02-13 115305" src="https://user-images.githubusercontent.com/53442176/218491780-4b380505-54ea-41d8-b588-2f5d7cceac18.png">
+
+También crea en la estructura de carpetas, una carpeta con el nombre **coverage** y dentro de **Icov-report** un archivo **index.html** donde al clickearlo te lleva a un reporte mas global en el cual se detalla más ampliamente el código cubierto por cada test.
+
+
+
+
