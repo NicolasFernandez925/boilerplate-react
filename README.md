@@ -5,6 +5,13 @@
 
 Este proyecto proporciona una base sólida y organizada para comenzar una aplicación de React utilizando TypeScript para una mayor legibilidad y mantenibilidad del código. Se han aplicado diversas herramientas y buenas prácticas para mejorar la calidad y eficiencia del desarrollo.
 
+## Instalación extensiones VScode
+Cuando se ingresa a la carpeta en donde se encuentra el proyecto una vez clonado, mostrará un cartel en la parte inferior derecha del editor con las extensiones recomendades MÍNIMAS para que el proyecto funcione correctamente:
+
+<img width="336" alt="Captura de pantalla 2023-02-13 105309" src="https://user-images.githubusercontent.com/53442176/218487512-e2f0d9bf-5204-410d-a042-558532100ef1.png">
+
+al clickear en **Install** se instalarán todas las extensiones recomendadas.
+
 ## Instalación de dependencias :package: 
 Antes de comenzar a trabajar en el proyecto, es necesario instalar las dependencias. Para ello, se utiliza el manejador de paquetes yarn. Ejecuta el siguiente comando en la terminal:
 
@@ -29,6 +36,14 @@ Para mantener la calidad y legibilidad del código, se han implementado diversas
 - **husky**: para ejecutar ESLint y Prettier antes de realizar un commit.
 
 De esta manera, se garantiza que el código subido al repositorio sea limpio y de calidad.
+
+Un ejemplo al realizar un commit, se ejecuta husky y procesará tanto Prettier cómo Eslint, en este ejemplo muestra algunos errores de importaciones:
+
+
+<img width="530" alt="Captura de pantalla 2023-02-13 113333" src="https://user-images.githubusercontent.com/53442176/218488140-d8fcc858-3dc5-4ef9-8a92-abcb34388f0d.png">
+
+
+Debido a estos errores, el **commit** no se realizó ya que **Eslint** validó que el código no cumple con las reglas. Para solucionarlo se debe ir a el/los archivos descriptos en la captura (ejemplo), arreglarlos y volver a realizar **git add.** & **git commit -m "..."**.
 
 ## Tipos de datos con TypeScript <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.svg" alt="TypeScript Logo" width="25"/>
 Se utiliza TypeScript para mejorar la legibilidad y mantenibilidad del código, permitiendo la definición de tipos de datos en las variables, funciones, etc.
