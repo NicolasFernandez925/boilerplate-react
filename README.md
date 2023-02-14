@@ -101,8 +101,8 @@ src
 |   |-- ...
 |   |-- index.ts
 |-- utils -> funciones reutilizables
-|   |-- Date.ts
-|   |-- Formatter.ts
+|   |-- date.ts
+|   |-- formatter.ts
 |   |-- ...
 |   |-- index.ts
 |-- config -> configuraciones globales
@@ -146,19 +146,21 @@ src
 |   |   |   |-- index.ts
 |   |   |   |-- ...
 |   |   |-- interfaces
-|   |   |   |-- PropAbout.ts
 |   |   |   |-- ...
 |   |   |-- About.tsx
 |   |   |-- index.ts
 |   |   |-- style.css
 |   |-- ...
+|-- api
+|   |-- api.auth.ts
+|   |-- api.post.ts
 |-- services -> se agrupan en base a dominio
 |   |-- Auth
-|   |   |-- auth.ts
+|   |   |-- auth.service.ts
 |   |   |-- index.ts
 |   |   |-- ...
 |   |-- Post
-|   |   |-- post.ts
+|   |   |-- post.service.ts
 |   |   |-- index.ts
 |   |   |-- ...
 |   |-- ...
