@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-
 import type { IUserProps } from './interface';
 
 import './App.css';
@@ -11,7 +9,6 @@ function App({ user }: IUserProps): JSX.Element {
         learn react
       </a>
 
-      <img src={logo} alt="" />
       <header className="App-header">
         <p>{user.age}</p>
         <p>{user.name}</p>
